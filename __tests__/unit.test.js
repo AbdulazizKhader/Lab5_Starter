@@ -54,7 +54,41 @@ test('is not a strong password short', () => {
   // TODO
   expect(isStrongPassword("225")).toBe(false);
 });
-test('is nota stong Password 16 letters', () => {
+test('is not a stong Password 16 letters', () => {
   // TODO
   expect(isStrongPassword("hfhgkdlskdjgkfne")).toBe(false);
+});
+
+test('is a date normal', () => {
+  // TODO
+  expect(isDate("20/12/3520")).toBe(true);
+});
+test('is a date 1 day and month', () => {
+  // TODO
+  expect(isDate("1/1/2023")).toBe(true);
+});
+test('is not a date dashes', () => {
+  // TODO
+  expect(isDate("20-12-3520")).toBe(false);
+});
+test('is not a date 2 digit year', () => {
+  // TODO
+  expect(isDate("1/1/23")).toBe(false);
+});
+
+test('is a hex color white', () => {
+  // TODO
+  expect(isHexColor("#000000")).toBe(true);
+});
+test('is a hex color random', () => {
+  // TODO
+  expect(isHexColor("#F00EED")).toBe(true);
+});
+test('is not a hex color color name', () => {
+  // TODO
+  expect(isHexColor("red")).toBe(false);
+});
+test('is a hex color 5 symbols', () => {
+  // TODO
+  expect(isHexColor("#FDDAD")).toBe(false);
 });
