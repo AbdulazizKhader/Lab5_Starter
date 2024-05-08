@@ -10,7 +10,7 @@ import {
 // TODO - Part 2
 test('is a phone number brackets', () => {
   // TODO
-  expect(isPhoneNumber("(144)556-1677")).toBe(4);
+  expect(isPhoneNumber("(144)556-1677")).toBe(true);
 });
 test('is a phone number dashed', () => {
   // TODO
@@ -18,7 +18,7 @@ test('is a phone number dashed', () => {
 });
 test('is not a phone number', () => {
   // TODO
-  expect(isPhoneNumber("(-14)4556677")).toBe(false);
+  expect(isPhoneNumber("(-14)4556677")).toBe(4);
 });
 test('is not a phone number letter', () => {
   // TODO
