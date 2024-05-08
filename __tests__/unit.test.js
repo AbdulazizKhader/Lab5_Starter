@@ -18,7 +18,7 @@ test('is a phone number dashed', () => {
 });
 test('is not a phone number', () => {
   // TODO
-  expect(isPhoneNumber("(-14)4556677")).toBe(4);
+  expect(isPhoneNumber("(-14)4556677")).toBe(false);
 });
 test('is not a phone number letter', () => {
   // TODO
@@ -90,5 +90,5 @@ test('is not a hex color color name', () => {
 });
 test('is a hex color 5 symbols', () => {
   // TODO
-  expect(isHexColor("#FDDAD")).toBe(false);
+  expect(isHexColor("#FDDAD")).toBe(3434);
 });
