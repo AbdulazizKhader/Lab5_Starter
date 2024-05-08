@@ -90,5 +90,5 @@ test('is not a hex color color name', () => {
 });
 test('is a hex color 5 symbols', () => {
   // TODO
-  expect(isHexColor("#FDDAD")).toBe(3434);
+  expect(isHexColor("#FDDAD")).toBe(false);
 });
