@@ -1,5 +1,6 @@
 // expose.js
 window.addEventListener('DOMContentLoaded', init);
+const jsConfetti = new JSConfetti();
 
 function init() {
   // TODO
@@ -40,6 +41,9 @@ function init() {
   })
 
   audioButton.addEventListener("click", () => {
+    if(hornMain.value === "party-horn"){
+      jsConfetti.addConfetti();
+    }
     audio.play();
   })
   
